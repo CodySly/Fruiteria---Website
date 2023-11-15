@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/links/css/light-links.css" rel="stylesheet">
+    <title>Fruiteria</title>
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+<body>
+<header>
+    <a href="/index.html">
+        <img src="/img/fruiteria-trans.png" alt="fruiteria" width="auto" height="50px">
+    </a><br>
+    Mexico Paletas, Ice Cream, Snacks & Drinks
+    <ul>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">&#127847;Menu</a>
+            <div class="dropdown-content" style="left:0;">
+                <a href="/menu/flavors.html">Flavors</a>
+                <a href="/menu/paleta.html">Paleta</a>
+                <a href="/menu/elote.html">Elote</a>
+                <a href="/menu/specialitycups.html">Speciality Cups</a>
+                <a href="/menu/traditionalsnacks.html">Traditional Snacks</a>
+                <a href="/menu/drinks.html">Drinks</a>
+                <a href="#">Full Menu</a>
+            </div>
+        </li>
+        <li class="dropdown" style="float:right">
+            <a href="javascript:void(0)" class="dropbtn">&#9881;</a>
+            <div class="dropdown-content">
+                <a href="/links/careers.html">Light</a>
+                <a href="/dark-mode/links/careers-dark.html">Dark</a>
+            </div>
+        </li>
+        <li style="float:right"><a href="/exclusive-deals.html">Exclusive Deals</a></li>
+    </ul>
+</header>
+<main>
+    <h2>Fruiteria Employment Application</h2>
+
+    <form action="/application-form.php" method="post">
+        <div style="overflow-x: auto;">
+        <table style="border-spacing: 0px; width: 100%;">
+            <tr>
+                <th>
+                    <label for="date-applied">Date Applied:</label>
+                </th>
+                <th>
+                    <label for="start-date">Start Date:</label>
+                </th>
+            </tr>
+            <tr>
+                <td><input type="date" id="date-applied" name="date-applied"></td>
+                <td><input type="date" id="start-date" name="start-date"></td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="positions">Position Applied For:</label>
+                </th>
+                <th>
+                    <label for="birth-date">Birth Date:</label>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <input list="positions" name="positions">
+                        <datalist id="positions">
+                            <option value="Store Manager">
+                            <option value="Assistant Store Manager">
+                            <option value="Shift Supervisor">
+                            <option value="Server-Cashier">
+                            <option value="Food Prep-Paleta Maker">
+                            <option value="Food Prep-Ice Cream Maker">
+                            <option value="Food Prep-Cook">
+                            <option value="BackEnd-Custodian">
+                            <option value="Other">
+                        </datalist>
+                </td>
+                <td>
+                    <input type="date" id="birth-date" name="birth-date">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="fname">First Name:</label>
+                </th>
+                <th>
+                    <label for="lname">Last Name:</label>
+                </th>
+            </tr>
+            <tr>
+                <td><input type="text" id="fname" name="fname" value=""></td>
+                <td><input type="text" id="lname" name="lname" value=""></td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="phone">Phone Number:</label>
+                </th>
+                <th>
+                    <label for="email">Email Address:</label>
+                </th>
+            </tr>
+            <tr>
+                <td><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></td>
+                <td><input type="email" id="email" name="email" value=""></td>
+            </tr>
+            <th>
+                <label for="city">City:</label>
+            </th>
+            <th>
+                <label for="state">State:</label>
+            </th>
+            <tr>
+                <td><input type="text" id="city" name="city" value=""></td>
+                <td><input typpe="text" id="state" name="state" value=""></td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="gender">Gender:</label>
+                </th>
+                <th>
+                    <input type="checkbox" id="male" name="male" value="male">
+                    <label for="male">Male</label>
+                    <input type="checkbox" id="female" name="female" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="checkbox" id="other" name="other" value="other">
+                    <label for="other">Other</label>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="days-available">Days Available:</label>
+                </th>
+                <th>
+                    <input type="checkbox" id="monday" name="monday" value="monday">
+                    <label for="monday">Monday</label>
+                    <input type="checkbox" id="tuesday" name="tuesday" value="tuesday">
+                    <label for="tuesday">Tuesday</label><br>
+                    <input type="checkbox" id="wednesday" name="wednesday" value="wednesday">
+                    <label for="wednesday">Wednesday</label><br>
+                    <input type="checkbox" id="thursday" name="thursday" value="thursday">
+                    <label for="thursday">Thursday</label>
+                    <input type="checkbox" id="friday" name="friday" value="friday">
+                    <label for="friday">Friday</label><br>
+                    <input type="checkbox" id="weekends" name="weekends" value="weekends">
+                    <label for="weekends">Weekends</label>
+                    
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="shift-available">Shift Available:</label>
+                </th>
+                <th>
+                    <input type="checkbox" id="morning" name="morning" value="morning">
+                    <label for="monday">Morning</label><br>
+                    <input type="checkbox" id="afternoon" name="afternoon" value="afternoon">
+                    <label for="tuesday">Afternoon</label><br>
+                    <input type="checkbox" id="nights" name="nights" value="nights">
+                    <label for="wednesday">Nights</label>
+                </th>
+            <tr>
+                <th>
+                    <label for="Education">Education:</label>
+                </th>
+                <th>
+                    <input type="checkbox" id="high-school" name="high-school" value="high-school">
+                    <label for="high-school">High School</label><br>
+                    <input type="checkbox" id="college-university" name="college-university" value="college-university">
+                    <label for="college-university">College/University</label><br>
+                    <input type="checkbox" id="trade-school" name="trade-school" value="trade-school">
+                    <label for="trade-school">Trade School</label>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="references">Upload References:</label>
+                </th>
+                <th>
+                    <input type="file" id="references" name="references">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="myfile">Upload Resume:</label>
+                </th>
+                <th>
+                    <input type="file" id="myfile" name="myfile">
+                </th>
+            </tr>        
+        </table>
+    </div>
+        
+        <h1>Terms and Conditions for Employment Application
+
+            1. Application Submission: By submitting your application, you acknowledge that the information provided is true, accurate, and complete to the best of your knowledge. Any false statements or omissions may result in disqualification from employment consideration or termination if already employed.
+            
+            2. Personal Data: You understand and consent to the collection, storage, and processing of your personal data provided in the application for the purpose of employment consideration and recruitment processes. Your personal data will be treated confidentially and in accordance with applicable data protection laws.
+            
+            3. Application Review: The submission of an application does not guarantee employment. Our company will review applications based on relevant criteria, including qualifications, experience, and the needs of the organization. We may contact you for further information or to schedule an interview if deemed necessary.
+            
+            4. Equal Opportunity Employer: We are an equal opportunity employer and do not discriminate on the basis of race, color, religion, sex, national origin, age, disability, or any other legally protected status. All employment decisions are made based on merit, qualifications, and business needs.
+            
+            5. Employment Verification: If offered employment, you authorize us to conduct necessary background checks and employment verifications, including but not limited to references, education, and criminal records, to verify the information provided during the application process.
+            
+            6. Confidentiality: You agree to maintain the confidentiality of any proprietary or confidential information belonging to our company or its customers that you may come across during the application process. This includes, but is not limited to, trade secrets, business strategies, and client information.
+            
+            7. Disqualification and Termination: Our company reserves the right to disqualify applicants or terminate employment if false information is provided, if you fail to meet our employment requirements or policies, or if your conduct violates company policies, codes of conduct, or applicable laws.
+            
+            8. Changes to Terms: Our company may modify or update these terms and conditions at any time without prior notice. It is your responsibility to review and understand the most current version of these terms and conditions.
+            
+            By submitting your application, you acknowledge that you have read, understood, and agree to these terms and conditions for employment application.
+            
+        </h1>
+        <table style="border-spacing: 0px; width: 100%;">
+            <tr>
+                <th>
+                    <input type="checkbox" name="terms">
+                </th>
+                <th>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </th>
+            </tr>
+        </table><br><br>
+
+        <input class="button" type="submit" value="Submit" style="float: right;">
+
+    </form><br><br>
+    
+</main>
+<h6>
+    <a style="color:black" href="/links/aboutus.html">About Us</a>
+    <a style="color:black" href="/links/nutrition.html">Nutrition</a>
+    <a style="color:black" href="/links/updates.html">Updates</a>
+    <a style="color:black" href="/links/location.html">Locations</a>
+    <a style="color:black" href="/links/careers.html">Careers</a>
+</h6>
+<h5>
+    <a href="#">
+        <img src="/img/fruiteria-logo-trans.png" alt="Fruiteria" style="float:left;width:50px;height:50px;">
+    </a>
+    <a href="https://www.instagram.com/myfruiteria/">
+        <img src="/img/insta.png" alt="Instagram" style="float:none;width:50px; height:55px;">
+    </a>
+    <a href="/links/aboutus.html">
+        <img src="/img/Strawberry-logo.png" alt="Strawberry" style="float:right;width:80px;height:80px">
+    </a>
+    <a href="https://www.facebook.com/myfruiteria/">
+        <img src="/img/facebook-trans.png" alt="Facebook" style="float:right;width:50px;height:60px;">
+    </a>
+</h5>
+
+<footer>
+    <p>
+        <br>Fruiteria<br>
+        All Rights Reserved<br>
+        &copy; 2019-2023<br>
+        Orem, Utah<br>
+        84057-2539
+    </p>
+</footer>
+</body>
+</html>
